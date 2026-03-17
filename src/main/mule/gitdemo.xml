@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="e2101651-48e3-4bac-8a6e-5c8f860b2766" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="gitdemoFlow" doc:id="65f453a5-eae8-4d0a-8566-34a8ad7647b1" >
+		<http:listener doc:name="Listener" doc:id="f94b9821-bc32-4a82-af64-7f7c7c38f657" config-ref="HTTP_Listener_config" path="/test"/>
+		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="d3411107-710b-44e1-b581-001e03529519" />
+		<logger level="INFO" doc:name="Logger" doc:id="9f2cb880-2159-4a43-bcca-f370162fa407" message="pritning setpayload #[payload]"/>
+	</flow>
+</mule>
