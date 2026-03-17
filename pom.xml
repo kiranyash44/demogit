@@ -4,7 +4,7 @@
 
 	<groupId>974030d0-65a3-4bc8-9d7b-49f312557103</groupId>
 	<artifactId>gitdemo</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<packaging>mule-application</packaging>
 
 	<name>gitdemo</name>
