@@ -8,10 +8,9 @@ on:
 
 jobs:         
 
-  build:
+  DEV:
 
     runs-on: ubuntu-latest
-    environment: DEV
     
     steps:
 
