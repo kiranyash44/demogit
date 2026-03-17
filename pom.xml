@@ -4,7 +4,7 @@
 
 	<groupId>974030d0-65a3-4bc8-9d7b-49f312557103</groupId>
 	<artifactId>gitdemo</artifactId>
-	<version>1.0.5</version>
+	<version>1.0.6</version>
 	<packaging>mule-application</packaging>
 
 	<name>gitdemo</name>
@@ -34,7 +34,7 @@
 					<cloudhub2Deployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<provider>MC</provider>
-						<environment>SANDBOX</environment>
+						<environment>Sandbox</environment>
 						<target>Cloudhub-US-East-2</target>
 						<applicationName>${project.artifactId}</applicationName>
 						<server>Repository</server>
